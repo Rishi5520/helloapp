@@ -1,4 +1,4 @@
-image: node:18.19.1                                                                                                   # पाइपलाइन में उपयोग करने के लिए Node.js की इमेज
+image: node:18.19.1                                                                                                 
 
 pipelines:
   default:
