@@ -1,0 +1,20 @@
+image: node:18.19.1                                                                                                   # पाइपलाइन में उपयोग करने के लिए Node.js की इमेज
+
+pipelines:
+  default:
+    - step:
+        name: Install Dependencies
+        caches:
+          - node 
+        script:
+          - npm install 
+
+    - step:
+        name: Run Tests
+        script:
+          - npm test 
+
+    - step:
+        name: Build
+        script:
+          - npm run build
